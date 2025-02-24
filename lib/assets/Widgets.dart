@@ -187,47 +187,32 @@ class TextCoin_Banner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Align(
-          alignment: Alignment.topLeft,
-          child: Row(
-            children: [
-              Text('App Exclusive Offer',style: TextStyle(
-                fontSize: 28,
+        Row(
+          children: [
+            Text('App Exclusive Offer',style: TextStyle(
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
+              fontStyle: FontStyle.normal,
+              color: Colors.black87
+
+            ),),
+          ],
+        ),
+        Row(
+          children: [
+            Text('Applicable on recharges above Rs. 249.',style: TextStyle(
+                fontSize: 18,
                 fontWeight: FontWeight.bold,
                 fontStyle: FontStyle.normal,
                 color: Colors.black87
-
-              ),),
-            ],
-          ),
-        ),
-        Row(
-          children: [
-            Align(
-                alignment: Alignment.topLeft,
-                child: Text('Applicable on recharges above Rs. 249.',style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.normal,
-                    color: Colors.black87
-                ),),
-            ),
+            ),),
           ],
         ),
-        Row(
+        Text('Check Now >> '),Row(
           children: [
-            Align(
-                alignment: Alignment.topLeft,
-                child: Text('Check Now >> '),
-            ),
-          ],
-        ),Row(
-          children: [
-            Align(
-                alignment: Alignment.topLeft,
-                child: Text('T&C apply'),
-            ),
+            Text('T&C apply'),
           ],
         ),
       ],
